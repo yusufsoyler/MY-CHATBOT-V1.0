@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot İSTE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<header><div class="headbox">
+    <img src="Black White Gold Modern Football Club Logo.png" width="180" height="180" alt="none">
+   <h1 class="logo">İSTE ÖĞRENCİ REHBERİ CHATBOTU</h1>
+
+</div>
+    
+</header>
+<body >
+    <div  class="container mt-5">
+        <div id="chat-container" class="border rounded p-3">
+            <div class="message bot">Merhaba! Size nasıl yardımcı olabilirim?</div>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" id="user-input" class="form-control" placeholder="Soru sor...">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" onclick="sendMessage()">Gönder</button>
+               
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="chatbot.js"></script>
+</body>
+<footer><br><br><center>
+    <button id="voice-button" class="kenarlık" type="button" onclick="startVoiceRecognition()">
+    <ul class="wave-menu" >
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+        
+      </div></button><h5>Sesli Komut Butonu</h5><br>
+      
+    </center>
+    <div><h5>v1.0</h5></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+ const options = {
+  bottom: '64px', // default: '32px'
+  right: '64px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '1.1s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
+</html>
